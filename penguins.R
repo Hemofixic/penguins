@@ -1,6 +1,6 @@
 data <- read.csv("raw/penguins.csv")
 x <- data$bill_length_mm
 
-hist(x, breaks = seq(40, 60, 4))
+png("pics/penguins-hist.png")
 hist(x, breaks = seq(40, 60, 2))
-hist(x, breaks = seq(40, 60, 1))
+dev.off()
